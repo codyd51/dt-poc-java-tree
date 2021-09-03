@@ -9,10 +9,6 @@ public class App {
 	public static void main(String[] args) throws IOException {
 		unzip();
 
-		// 02-0158 - Application Loads Code Dynamically
-		DexClassLoader dx = new DexClassLoader("./network/dynamic.dex", null, null, null);
-		PathClassLoader pcl = new PathClassLoader("./vendored/dyn2.dex", null);
-
 		// 02-0108 - Google Play Warning: Embedded AWS Credentials"
 		System.out.println("Our AWS credential is " + "AKIAIOSFODNN7EXAMPLE");
 
