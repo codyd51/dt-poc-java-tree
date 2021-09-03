@@ -8,6 +8,21 @@ import java.util.zip.ZipOutputStream;
 public class App {
 	public static void main(String[] args) throws IOException {
 		unzip();
+
+		// 02-0158 - Application Loads Code Dynamically
+		DexClassLoader dx = new DexClassLoader("./network/dynamic.dex", null, null, null);
+		PathClassLoader pcl = new PathClassLoader("./vendored/dyn2.dex", null);
+
+		// 02-0108 - Google Play Warning: Embedded AWS Credentials"
+		System.out.println("Our AWS credential is " + "AKIAIOSFODNN7EXAMPLE");
+
+		// 02-0123 - Google Play Security Warning: Hardcoded Google Oauth Refresh Token
+		String oauthRefreshToken = "1/DGXUA3FmzHZnjEJDvX8ynqJCALJpo6ZT3IVNK6aBYHU";
+		String refreshToken2 = "1/EeE4LhI8EVRj3F98wmlwFDFnIycu16EY2Gv8dDujT24";
+		System.out.printf("OAuth refresh token: %s token2 %s%n", oauthRefreshToken, refreshToken2);
+
+		// 00-0080 - Hardcoded Kony Password
+		System.out.println("Kony@1234DXir4mzKhY7SuAVoTrjti7Sm is very sensitive");
 	}
 
 	private static void unzip() throws IOException {
