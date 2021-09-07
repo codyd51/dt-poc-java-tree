@@ -7,6 +7,7 @@ import java.util.zip.ZipOutputStream;
 
 public class App {
 	public static void main(String[] args) throws IOException {
+		abc();
 		unzip();
 
 		// 02-0108 - Google Play Warning: Embedded AWS Credentials"
@@ -19,8 +20,6 @@ public class App {
 
 		// 00-0080 - Hardcoded Kony Password
 		System.out.println("Kony@1234DXir4mzKhY7SuAVoTrjti7Sm is very sensitive");
-
-		e
 	}
 
 	private static void unzip() throws IOException {
