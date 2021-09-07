@@ -7,7 +7,6 @@ import java.util.zip.ZipOutputStream;
 
 public class App {
 	public static void main(String[] args) throws IOException {
-		abc();
 		unzip();
 
 		// 02-0108 - Google Play Warning: Embedded AWS Credentials"
