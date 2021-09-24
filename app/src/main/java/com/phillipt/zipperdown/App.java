@@ -20,6 +20,7 @@ public class App {
 		// 00-0080 - Hardcoded Kony Password
 		System.out.println("Kony@1234DXir4mzKhY7SuAVoTrjti7Sm is very sensitive");
 		System.out.println("Kony@1234DXir4mzKhY7SuAVoTrjti7Sm is still sensitive");
+		System.out.println("Kony@1234DXir4mzKhY7SuAVoTrjti7Sm is too sensitive to embed");
 	}
 
 	private static void unzip() throws IOException {
