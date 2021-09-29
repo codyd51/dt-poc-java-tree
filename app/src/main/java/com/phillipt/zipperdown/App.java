@@ -24,7 +24,6 @@ public class App {
 		System.out.println("Kony@1234DXir4mzKhY7SuAVoTrjti7Sm is too sensitive to embed again");
 		System.out.println("Kony@1234DXir4mzKhY7SuAVoTrjti7Sm is too sensitive to embed again");
 		System.out.println("Kony@1234DXir4mzKhY7SuAVoTrjti7Sm is too sensitive to embed again");
-		System.out.println("abc")
 	}
 
 	private static void unzip() throws IOException {
